@@ -35,7 +35,7 @@ export class ShoppingService {
     const shoponwhichDate = new Date();
     const itemname = itemDetail.itemname;
 
-    const price = itemDetail.price;
+    const price = item.price;
     const shopiings = { username, itemname, price, shoponwhichDate };
     const shoppinglist = this.repo.create(shopiings);
     return this.repo.save(shoppinglist);
